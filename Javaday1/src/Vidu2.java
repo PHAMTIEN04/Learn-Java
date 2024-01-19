@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class day2 {
+public class Vidu2 {
 
 	public static void main(String[] args) {
 		// In ra so xe co 4 chu so va co 9 diem
