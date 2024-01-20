@@ -10,7 +10,5 @@ public class Mang {
 		System.out.print("Nhap so sinh vien: ");
 		int n = nhap.nextInt();
 		m.HienThi(n);
-	
-		
 }
 }
