@@ -20,6 +20,8 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -35,6 +37,7 @@ public class FmQLSV extends JFrame {
 	private JTable table;
 
 	ArrayList<String> ds = new ArrayList<String>();
+	ArrayList<String> ds_s = new ArrayList<String>();
 	/**
 	 * Launch the application.
 	 */
@@ -223,10 +226,39 @@ public class FmQLSV extends JFrame {
 		contentPane.add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("Tìm kiếm");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String masv = JOptionPane.showInputDialog("Nhap Key");
+				for(String x : ds) {
+//					String[] che = x.split("[;]");
+					if(x.trim().toLowerCase().contains(masv.trim().toLowerCase())) {
+						ds_s.add(x);	
+						break;
+					}
+				}
+				napbang(ds_s);
+			}
+		});
 		btnNewButton_3.setBounds(409, 235, 89, 23);
 		contentPane.add(btnNewButton_3);
 		
 		JButton btnNewButton_4 = new JButton("Lưu file");
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					FileWriter f = new FileWriter("sinhvien.txt",false);
+					PrintWriter g = new PrintWriter(f);
+					for(String x:ds) {
+						g.println(x);
+					}
+					g.close();
+					
+				} catch (Exception e2) {
+					// TODO: handle exception
+					e2.printStackTrace();
+				}
+			}
+		});
 		btnNewButton_4.setBounds(547, 235, 89, 23);
 		contentPane.add(btnNewButton_4);
 		
