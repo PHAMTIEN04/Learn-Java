@@ -1,0 +1,5 @@
+sv1;Le Thanh Nam;K46;8.0
+Sv2;Tran Tien Dat;K46;1.0
+Sv3;Phan Thi Thao;K47;5.0
+Sv4;Le Nam Tien;k47;7.0
+Sv5;Tran Ngoc;K45;7.5
