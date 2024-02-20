@@ -103,6 +103,24 @@ public class FmQLSV extends JFrame {
 				napbang(ds);
 				
 			}
+			@Override
+			public void windowClosing(WindowEvent e) {
+				int n = JOptionPane.showConfirmDialog(null, "Ban co luu du lieu ko?");
+				if(n == 0) {
+					try {
+						FileWriter f = new FileWriter("sinhvien.txt",false);
+						PrintWriter g = new PrintWriter(f);
+						for(String x:ds) {
+							g.println(x);
+						}
+						g.close();
+						
+					} catch (Exception e2) {
+						// TODO: handle exception
+						e2.printStackTrace();
+					}
+				}
+			}
 		});
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 696, 672);
