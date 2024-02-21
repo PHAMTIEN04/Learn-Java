@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Javaday3
-Bundle-SymbolicName: Javaday3
-Bundle-Version: 1.0.0.qualifier
-Automatic-Module-Name: Javaday3
-Bundle-RequiredExecutionEnvironment: JavaSE-15
