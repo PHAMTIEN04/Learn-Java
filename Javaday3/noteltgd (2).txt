@@ -1,0 +1,29 @@
+//Phat sinh su kien:
+// - Phim:
+// Enter ascii : 10
+// Esc	ascii : 27
+// A ascii : 65
+// 0 ascii : 48
+// - Chuot:
+// Tren chuot co 3 thao tac + re chuot +keo + tha
+// Dap ung su kien:
+// Lap trinh tren dieu khien nao?
+// Lap trinh ten su kien nao cua dieu khien do?
+// 1. Jframe: 1 from de nhap xuat
+// Thuoc tinh: Layout(bo cuc):absolute(bat buoc)
+// Su kien: WindowOpened: xay ra khi chay from(frame) len.
+// 2. Jlabel:Dung de hien thi du lieu
+// Thuoc tinh: Text: go du lieu
+// 3. JtextField : dung de nhap va xuat du lieu
+// Thuoc tinh:
+// + Variable: Dat ten -> txtten
+// + Lay gia tri ra: ten.getText()
+// + Dua gia tri vao: ten.setText()
+// Su kien thuong dung :
+// Keypressed: xay ra khi nhan phim
+// e.getKeycode() -> lay ma phim vua nhap(10:enter,27:ESC)
+// 4.Jcombox va Jlist
+// Thuoc tinh: variable: dat ten -> cmbten,lstten
+// cmbten.addItem("Chuoi")
+// Event:itemStateChanged: Item state change when item selected change.
+// Lay gia tri ra: cmbten.getSelectedItem()
