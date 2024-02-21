@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Sv 1;Le Hoang Tien;21/08/1991;0.1
 Sv 2;Le Van Giang;19/11/1963;5.4
 Sv 3;Nguyen My Sy;22/10/1970;3.5
@@ -8,3 +9,15 @@ Sv 7;Nguyen My Ton;27/03/1985;3.3
 Sv 8;Tran Hoang Sy;31/12/1972;2.3
 Sv 9;Tran Hoang Hung;06/06/1999;2.1
 Sv 10;Le Van Tien;07/07/1960;9.4
+=======
+Sv 1;Nguyen Thanh Hung;25/05/1992;2.0
+Sv 2;Nguyen My Tam;19/03/1977;9.7
+Sv 3;Le Hoang Nga;29/11/1980;4.9
+Sv 4;Le Van Sy;11/11/1979;3.6
+Sv 5;Le Thanh Sy;25/03/1984;2.9
+Sv 6;Tran Thanh Tam;09/01/1997;2.0
+Sv 7;Le Van Tam;21/10/1966;6.0
+Sv 8;Nguyen Trung Tien;21/03/1990;4.7
+Sv 9;Nguyen Thanh Giang;31/07/1978;9.8
+Sv 10;Tran My Ton;17/12/1975;3.1
+>>>>>>> 53254a86814234b26d0f08aa78d437629ac3dc09
