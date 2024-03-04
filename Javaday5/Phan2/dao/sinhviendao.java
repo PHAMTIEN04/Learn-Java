@@ -29,9 +29,9 @@ public class sinhviendao {
 		}
 		return ds;
 	}
-	public void HienThi() {
-		for(sinhvienbean sv:ds) {
-			System.out.println(sv.toString());
-		}
-	}
+//	public void HienThi() {
+//		for(sinhvienbean sv:ds) {
+//			System.out.println(sv.toString());
+//		}
+//	}
 }
