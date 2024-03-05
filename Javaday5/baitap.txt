@@ -1,0 +1,16 @@
+//Regex
+//1. Mở lớp NhanVienBean:Bổ sung 2 trường email và số điện thoại -> cập nhật lại hàm get,set hàm tạo. Mở lớp hocsinhbean bỏ đi trường tên trường
+//2.Tại gói dao:viết hàm getds() trả về 1 arraylist<nguoibean>
+//	Đọc file ds.txt(file này chưaá người, học sinh, nhân viên)
+//	Nếu dòng nào hợp lệ thì lưu vào 1 Arraylít, dòng hợp lệ là dòng:
+//		- Nếu người có 3 thông tin, nếu lưu nhân viên có 7 thông tin, nếu học sinh có 6 thông tin 
+//		- Email theo định dạng: tên@domain.subdomain vd: nnha@gmail.com (dung regex)
+//		- Số điện thoại có 10 số, bắt đầu bởi số 0 (dung regex)
+//		- Ngày sinh phải theo định dạng: dd/MM/yyyy
+//		*Nếu dòng không hợp lệ thì lưu dòng số và thông báo sang file loi.txt
+//3.Tại bo: Viết các chức năng
+//		-Lấy về all thông tin từ hàm getds của dao
+//		-Tìm tương đối theo họ tên nhân viên
+//		-Hiển thị danh sách riêng cho nhân viên và học sinh
+//		-Cho biết mỗi lớp có bao nhiêu sinh viên đậu(đtb>=5), bao nhiêu sinh viên rớt(đtb < 5)
+//4.Tại view -> hiển thị các chức năng của bo (nên dùng form)
