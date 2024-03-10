@@ -7,9 +7,10 @@ import java.util.ArrayList;
 import bean.sinhvienbean;
 
 public class sinhviendao {
-	public ArrayList<sinhvienbean> ds = new ArrayList<sinhvienbean>();
+	public ArrayList<sinhvienbean> ds ;
 	public ArrayList<sinhvienbean> getsinhvien() throws Exception{
 		try {
+			ds = new ArrayList<sinhvienbean>();
 			FileReader f = new FileReader("sinhvien.txt");
 			BufferedReader rd = new BufferedReader(f);
 			while(true) {
@@ -23,15 +24,16 @@ public class sinhviendao {
 				ds.add(sv);
 			}
 			rd.close();
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
 		return ds;
 	}
-//	public void HienThi() {
-//		for(sinhvienbean sv:ds) {
-//			System.out.println(sv.toString());
-//		}
-//	}
+	public void HienThi() {
+		for(sinhvienbean sv:ds) {
+			System.out.println(sv.toString());
+		}
+	}
 }

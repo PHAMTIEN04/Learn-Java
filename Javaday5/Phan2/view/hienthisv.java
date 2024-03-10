@@ -22,18 +22,23 @@ public class hienthisv {
 			sv_b.TimKiem(key);
 			
 			System.out.println("**THEM**");
-			sv_b.Them("Sv10", "Pham Phuoc Tien", "K46", 10.0);
-
+			sv_b.Them("Sv18", "Pham Phuoc Tien", "K46", 10.0);
+			sv_b.getsinhvien();
+			sv_b.HienThi();
 			
 			System.out.println("**XOA**");
 			System.out.print("Nhap Key Xoa:");
 			String keyx = nhap.nextLine();
 			sv_b.Xoa(keyx);
+			sv_b.getsinhvien();
+			sv_b.HienThi();
 			
 			System.out.println("**SUA**");
 			System.out.print("Nhap Key Sua:");
 			String keys = nhap.nextLine();
 			sv_b.sua(keys);
+			sv_b.getsinhvien();
+			sv_b.HienThi();
 			
 			System.out.println("**THONG KE DAU ROT THEO KHOA**");
 			System.out.print("Nhap Key Khoa:");

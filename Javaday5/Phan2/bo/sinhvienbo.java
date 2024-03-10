@@ -12,10 +12,10 @@ import dao.sinhviendao;
 
 public class sinhvienbo {
 	sinhviendao svdao = new sinhviendao();
-	public ArrayList<sinhvienbean> ds;
+	public ArrayList<sinhvienbean> ds= new ArrayList<sinhvienbean>();
 	public ArrayList<sinhvienbean> getsinhvien() throws Exception{
-		ds = svdao.getsinhvien();
-		return ds;
+		this.ds = svdao.getsinhvien();
+		return this.ds;
 	}
 
 	public void TimKiem(String key) {
@@ -34,7 +34,7 @@ public class sinhvienbo {
 			FileWriter f = new FileWriter("sinhvien.txt",true);
 			BufferedWriter fb = new BufferedWriter(f);
 			boolean check = true;
-			for(sinhvienbean sv : ds) {
+			for(sinhvienbean sv : this.ds) {
 				if(sv.getMasv().trim().toLowerCase().equals(msv.trim().toLowerCase())) {
 					check = false;
 					break;
@@ -44,11 +44,15 @@ public class sinhvienbo {
 //				fb.newLine();
 				fb.write(msv + ";" + ht + ";" + khoa + ";" + dtb.toString()+'\n');
 				System.out.println("Da them thanh cong!!!");
+				fb.close();
+//				this.getsinhvien();
+				System.out.println("aaaa");
+//				this.HienThi();
 			}
 			else {
 				System.out.println("Du lieu da ton tai!!!");
 			}
-			fb.close();
+			
 		
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -73,6 +77,7 @@ public class sinhvienbo {
 			fb.close();
 			if(check == true) {
 				System.out.println("Da xoa thanh cong!!");
+//				svdao.HienThi();
 			}
 			else System.out.println("Khong tim thay!!!");
 
@@ -135,6 +140,7 @@ public class sinhvienbo {
 	        }
 
 	        fb.close();
+//	        svdao.HienThi();
 			
 	    } catch (Exception e) {
 	        e.printStackTrace();
@@ -152,11 +158,12 @@ public class sinhvienbo {
 			}
 		}
 		
+		
 	}
 	public void HienThi() {
 		try {
 
-			for(sinhvienbean sv:ds) {
+			for(sinhvienbean sv: this.ds) {
 			
 				System.out.println(sv.toString());
 		}

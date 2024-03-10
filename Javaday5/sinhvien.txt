@@ -3,3 +3,10 @@ Sv3;Phan Thi Thao;K47;5.0
 Sv4;Le Nam Tien;k47;7.0
 Sv5;Tran Ngoc;K45;7.5
 sv6;Tien Pro;K46;10.0
+Sv10;Pham Phuoc Tien;K46;10.0
+Sv11;Pham Phuoc Tien;K46;10.0
+Sv12;Pham Phuoc Tien;K46;10.0
+Sv13;Pham Phuoc Tien;K46;10.0
+Sv14;Pham Phuoc Tien;K46;10.0
+Sv16;Pham Phuoc Tien;K46;10.0
+Sv17;tienpro;K46;10.0
