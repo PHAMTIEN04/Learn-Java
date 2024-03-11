@@ -1,0 +1,11 @@
+Sv2;Tran Tien Dat;K46;1.0
+Sv3;Phan Thi Thao;K47;5.0
+Sv4;Le Nam Tien;k47;7.0
+Sv5;Tran Ngoc;K45;7.5
+sv6;Tien Pro;K46;10.0
+Sv7;Pham Phuoc Tien;K46;10.0
+Sv8;Pham Phuoc Tien;K46;10.0
+Sv9;Pham Phuoc Tien;K46;10.0
+sv1;Nguyen Huu Thien;K46;5.0
+sv11;Le Thanh Thuyet;k46;4.0
+sv12;Le Thanh Thuyet;k46;0.1

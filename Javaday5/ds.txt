@@ -1,0 +1,9 @@
+pham tien;true;17/11/2004
+phuong;false;17/11/2003;nv1;1.5;a@gmail.com;0998123123
+an;true;10/11/2002;22T;k46b;10.0
+Thien an;true;10/11/2002;22T;k46b;1.0
+phuong;false;17/11/2003;nv1;1.5;a@gmail.com;0998123123;aa
+phuong;false;17/11/2003;nv1;1.5;a@gmail.com;0998123123;aa
+asdfasdf;asdasd
+phuong;false;17/11/2003;nv1;1.5;@gmail.com;0998123123
+phuong;false;17/11/2003;nv1;1.5;a@gmail.com;099812312333
