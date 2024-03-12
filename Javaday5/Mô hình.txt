@@ -1,2 +1,0 @@
-Bean: Định nghĩa kiểu
-Dao: Lấy dữ liệu về từ đĩa lưu va
