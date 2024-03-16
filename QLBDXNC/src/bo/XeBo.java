@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import bean.XeBean;
+import bean.XeDapBean;
+import bean.XeMayBean;
 import bean.XeOtoBean;
 import dao.XeDao;
 
@@ -66,16 +68,37 @@ public class XeBo {
 	}
 	public void File_Tinh_Tien() {
 		try {
-			FileWriter w = new FileWriter("output.txt");
+			FileWriter w = new FileWriter("output.txt",false);
 			BufferedWriter bw = new BufferedWriter(w);
+			String check = "";
+			SimpleDateFormat dd = new SimpleDateFormat("HH:mm dd/MM/yyyy");
+
 			for(XeBean xb : ds) {
-				String infor = xb.get[0] + ";" + check1[1] + ";" + check1[2] + ";" + check1[3] + ";"+ check2[3]+";";
+				
 				if(xb instanceof XeOtoBean) {
-					
+					if(!((XeOtoBean) xb).getTtv().trim().toLowerCase().equals(((XeOtoBean) xb).getTtr().trim().toLowerCase())) {
+						bw.write("4"+";"+((XeOtoBean) xb).getBsx() + ";" + "Not Available" +";" + dd.format(xb.getTgv()) + ";" + dd.format(xb.getTgr()) + ";" + "Chua xac dinh - Dang xu ly boi thuong" + "\n");
+					}
+					else {
+						bw.write("4"+";"+((XeOtoBean) xb).getBsx() + ";" + "Not Available" +";" + dd.format(xb.getTgv()) + ";" + dd.format(xb.getTgr()) + ";" + Math.round(tinhgio(dd.format(xb.getTgv()), dd.format(xb.getTgr()).toString())*5000) * 2 + "\n");
+					}
+				}
+				if(xb instanceof XeDapBean){
+					bw.write("0"+";"+"Not Available" + ";" + ((XeDapBean) xb).getSovx() +";" + dd.format(xb.getTgv()) + ";" + dd.format(xb.getTgr()) + ";" + Math.round(tinhngay(dd.format(xb.getTgv()), dd.format(xb.getTgr()).toString())) * 1000 + "\n");
+				}
+				if(xb instanceof XeMayBean) {
+					bw.write("2"+";"+((XeMayBean) xb).getBsx() + ";" + "Not Available" +";" + dd.format(xb.getTgv()) + ";" + dd.format(xb.getTgr()) + ";" + Math.round(tinhngay(dd.format(xb.getTgv()), dd.format(xb.getTgr()).toString())) * 3000  + "\n");
 				}
 			}
+			bw.close();
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+	public void HienThi() {
+		for(XeBean xb : ds) {
+			System.out.println(xb.toString());
 		}
 	}
 	
