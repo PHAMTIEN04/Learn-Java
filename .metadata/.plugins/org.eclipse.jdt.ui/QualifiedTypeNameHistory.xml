@@ -24,4 +24,8 @@
     <fullyQualifiedTypeName name="bo.NguoiBo"/>
     <fullyQualifiedTypeName name="bean.Hocsinhbean"/>
     <fullyQualifiedTypeName name="bean.NguoiBean"/>
+    <fullyQualifiedTypeName name="bean.XeOtoBean"/>
+    <fullyQualifiedTypeName name="bean.XeDapBean"/>
+    <fullyQualifiedTypeName name="bean.XeMayBean"/>
+    <fullyQualifiedTypeName name="bo.XeBo"/>
 </qualifiedTypeNameHistroy>
