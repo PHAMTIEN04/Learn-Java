@@ -1,0 +1,2 @@
+TinB;Pham Phuoc Tien;10.0;10.0;1.0;7.0
+TinB;Nguyen Huu Thien;1.0;1.0;1.0;1.0

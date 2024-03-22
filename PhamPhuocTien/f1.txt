@@ -1,0 +1,3 @@
+TinA;Tran An Nhien;8.2;9.9;9.05
+TinA;Le Quoc Dat;7.5;9.3;8.4
+TinA;Le Thanh Thuyet;2.0;9.0;5.5

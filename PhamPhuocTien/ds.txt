@@ -1,0 +1,6 @@
+TinA;Tran An Nhien;8.2;9.9
+TinB;Pham Phuoc Tien;10.0;10.0;1.0
+TinA;Le Quoc Dat;7.5;9.3
+TinA;Nguyen Van Khanh;1.0;3.0;8.0
+TinA;Le Thanh Thuyet;2.0;9.0
+TinB;Nguyen Huu Thien;1.0;1.0;1.0
